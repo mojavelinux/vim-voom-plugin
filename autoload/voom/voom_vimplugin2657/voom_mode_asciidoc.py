@@ -102,7 +102,7 @@ def hook_makeOutline(VO, blines):
 
     for i in xrange(Z):
         L1 = blines[i].rstrip()
-        if not L1 or not L1[0] in CHARS:
+        if not L1 or not L1[0] in CHARS or (i > 0 and blines[i-1].rstrip() == '[discrete]'):
             continue
         ch = L1[0]
 
