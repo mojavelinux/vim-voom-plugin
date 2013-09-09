@@ -204,7 +204,7 @@ def hook_makeOutline(VO, blines):
                 else:
                     useOneClose = 2
             # make outline
-            tline = '  %s|%s' %('. '*(lev-1), head)
+            tline = ' %s%s' %('. '*(lev-1), head)
             tlines_add(tline)
             bnodes_add(bnode)
             levels_add(lev)
