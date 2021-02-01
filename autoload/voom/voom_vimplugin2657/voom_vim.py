@@ -163,7 +163,7 @@ def voom_TreeCreate(): #{{{2
     if VO.MTYPE:
         computeSnLn(body, blnr)
         # reST, wiki files often have most headlines at level >1
-        vim.command('setl fdl=2')
+        vim.command('setl fdl=3')
         return
 
     bnodes = VO.bnodes
